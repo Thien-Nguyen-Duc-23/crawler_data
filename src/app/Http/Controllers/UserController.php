@@ -26,6 +26,7 @@ class UserController extends Controller
     }
 
     public function register(Request $request) { 
+        // tesst
         $validator = Validator::make($request->all(), [ 
             'name' => 'required', 
             'email' => 'required|email|unique:users', 
